@@ -1,5 +1,6 @@
 :root {
-  --color: #fbff00;
+  --color: #dbdf00;
+  --color1: #1f6164;
 }
 * {
   margin: 0;
@@ -21,7 +22,7 @@ body {
 .header {
   width: 100%;
   height: 80px;
-  background-color: rgb(31 97 100);
+  background-color: #1f6164;
   display: flex;
   align-items: center;
 }
@@ -40,8 +41,14 @@ body {
   cursor: pointer;
 }
 .icon img {
-  /* justify-content: flex-end; */
   margin-left: 10px;
+}
+.icon img:hover {
+  transform: rotatey(150deg);
+  background-color: var(--color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 .image {
   background-image: url("../image/1.jpg");
@@ -60,4 +67,9 @@ p:last-child {
   color: rgb(39, 39, 39);
   margin-top: 400px;
   margin-left: 130px;
+  font-size: 30px;
+}
+p::selection {
+  color: rgb(252, 252, 252);
+  background-color: var(--color1);
 }
