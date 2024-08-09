@@ -1,3 +1,6 @@
+:root {
+  --color: #fbff00;
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +21,7 @@ body {
 .header {
   width: 100%;
   height: 80px;
-  background-color: blueviolet;
+  background-color: rgb(31 97 100);
   display: flex;
   align-items: center;
 }
@@ -32,7 +35,29 @@ body {
   margin-left: 30px;
   justify-content: center;
 }
+.menu ul li:hover {
+  color: var(--color);
+  cursor: pointer;
+}
 .icon img {
   /* justify-content: flex-end; */
   margin-left: 10px;
+}
+.image {
+  background-image: url("../image/1.jpg");
+  /* opacity: 0.1; */
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+}
+p:first-child {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 90px;
+  font-size: 50px;
+}
+p:last-child {
+  color: rgb(39, 39, 39);
+  margin-top: 400px;
+  margin-left: 130px;
 }
