@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: font;
+  src: url(../font/ThistailsSans_Demo-Regular.otf);
+}
+body {
+  font-family: font;
+}
+.name-shop {
+  width: 30%;
+  margin-left: 50px;
+  font-size: 30px;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-right: 250px;
+}
+.menu ul li {
+  margin-left: 30px;
+  justify-content: center;
+}
+.icon img {
+  /* justify-content: flex-end; */
+  margin-left: 10px;
+}
