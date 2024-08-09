@@ -1,0 +1,121 @@
+@import url(../style/resposive.css);
+:root {
+  --color: #dbdf00;
+  --color1: #1f6164;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: font;
+  src: url("../font/ThistailsSans_Demo-Regular.otf");
+}
+body {
+  font-family: font;
+  background-color: rgb(241, 241, 241);
+}
+.name-shop {
+  /* width: 30%;
+  margin-left: 50px; */
+  font-size: 30px;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #1f6164;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  /* margin-right: 250px; */
+}
+.menu ul li {
+  margin-left: 30px;
+  justify-content: center;
+  /* color: #fff; */
+}
+.menu ul li:hover {
+  color: var(--color);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.icon img {
+  margin-left: 10px;
+}
+.icon img:hover {
+  transform: rotatey(150deg);
+  background-color: var(--color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+.image {
+  background: linear-gradient(
+      to left,
+      rgba(78, 78, 78, 0.5),
+      rgba(78, 78, 78, 0.5)
+    ),
+    url("../image/1.jpg");
+
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+p:first-child {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 50px;
+}
+p:last-child {
+  color: rgb(39, 39, 39);
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+p::selection {
+  color: rgb(255, 255, 255);
+  background-color: var(--color1);
+}
+.header-main-page {
+  padding-left: 20px;
+  margin-top: 60px;
+  font-size: 40px;
+}
+.header-main-page + .h1-title::selection {
+  color: rgb(255, 255, 255);
+  background-color: var(--color1);
+}
+.h1-title {
+  margin-top: 40px;
+  padding-left: 20px;
+  font-size: 30px;
+}
+.page-faq {
+  /* background-color: #1f6164; */
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.main-page {
+  width: 70%;
+}
+.reply {
+  margin: 30px 10px;
+}
+.hr {
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--color1);
+}
