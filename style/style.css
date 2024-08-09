@@ -1,6 +1,6 @@
 @import url(../style/resposive.css);
 :root {
-  --color: #dbdf00;
+  --color: #f9fd00;
   --color1: #1f6164;
 }
 * {
@@ -114,8 +114,66 @@ p::selection {
 .reply {
   margin: 30px 10px;
 }
+
+.reply:hover {
+  color: var(--color);
+}
 .hr {
   height: 10px;
   border-radius: 10px;
   background-color: var(--color1);
+}
+.footer {
+  margin-top: 40px;
+  background-color: var(--color1);
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+}
+.information {
+  width: 50%;
+  padding-top: 40px;
+}
+.information h3 {
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.information p {
+  font-size: 22px;
+  color: #fff;
+  text-align: justify;
+}
+.input {
+  padding-top: 60px;
+  padding-right: 40px;
+}
+.input-box input {
+  height: 40px;
+  width: 40%;
+  border-radius: 12px;
+  padding: 8px;
+  margin-bottom: 40px;
+  /* background-color: #1f6164; */
+}
+.hr2 {
+  margin-top: 24px;
+  margin-bottom: 20px;
+  width: 30%;
+}
+.button {
+  width: 90px;
+  height: 55px;
+  border-radius: 10px;
+  color: var(--color1);
+  font-size: 18px;
+  background-color: var(--color);
+}
+.button:hover {
+  background-color: var(--color1);
+  color: var(--color);
+  border-color: #f9fd00;
+  transition: all 0.2s ease;
 }
